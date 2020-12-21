@@ -1,37 +1,36 @@
-#включают  в себя lt;iostream 
-с помощью пространства имен std;
-int основной ()
+#include <iostream>
+using namespace std;
+int main()
 {
-    setlocale(LC_ALL,  "rus" );
-    int мин 0, макс 0, n;
-    int aй 100];
- кут хлт÷;     ";
- cin (cin)gt; n;
- кут хлт;   " ;
-    для (int i q 1;i 'lt; n; i))
+    setlocale(LC_ALL, "rus");
+    int min = 0, max = 0, n;
+    int a[100];
+    cout << "Ââåäèòå êîëè÷åñòâî ýëåìåíòîâ ìàññèâà: ";
+    cin >> n;
+    cout << "Ââåäèòå ýëåìåíòû ìàññèâà: ";
+    for (int i = 1; i <= n; i++)
     {
 
- cin (gt;gt; a'i);
+        cin >> a[i];
     }
- Кут хт; « йо:  n» ;
-    для (int i q 1;i 'lt; n; i))
+    cout << "Ìàññèâ:\n";
+    for (int i = 1; i <= n; i++)
     {
- Кут хт; айе хт; ' ';
+        cout << a[i] << ' ';
     }
- мин и анс;
- кут хт; эндл;
-    для (int i q 1;i 'lt; n; i))
+    min = a[n];
+    cout << endl;
+    for (int i = 1; i <= n; i++)
     {
-        если (аиФ/л; мин)
+        if (a[i] < min)
         {
- мин и аи;;
+            min = a[i];
         }
-        если (a'i)
+        if (a[i] > max)
         {
- макс и аие;
+            max = a[i];
         }
     }
- cout «lt;lt;  »max» »Lt;  lt; max lt; lt; endl;
- кут «lt;lt;  »мин»»  (lt;lt; min lt; lt; endl;)
- cout «lt;lt;  »max»min»  (lt;lt; max) и мин (lt;lt; endl);
-}
+    cout << "max=" << max << endl;
+    cout << "min=" << min << endl;
+    cout << "max+min=" << max + min << endl;
